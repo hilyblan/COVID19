@@ -1,6 +1,6 @@
 # COVID19 // Courbe quotidienne
 
-## La courbe
+## La courbe au 16 mars 2020
 ![alt text](./covid19.png?raw=true "Évolution en France")
 
 ## Données issues de Santé Public France :
