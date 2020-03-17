@@ -18,20 +18,25 @@ tau=4.5
 #print clabel
 
 set label 1 sprintf("Tps de doublement\nFrance\n%4.1f jours",log(2.)*4.5) at 18,10 center font "Carlito,20" boxed
-set label 2 sprintf("%4.1f jours",log(2.)*6.5) at 22,1300 center rotate by 15 font "Carlito,14"
-set label 3 sprintf("%4.1f jours",log(2.)*5)   at 22,4500 center rotate by 20 font "Carlito,14"
+set label 2 sprintf("ARH: %4.1f jours",log(2.)*6.5) at 22,1300 center rotate by 15 font "Carlito,14"
+set label 3 sprintf("Grand Est: %4.1f jours",log(2.)*5)   at 22,4500 center rotate by 20 font "Carlito,14"
+set label 4 sprintf("Drôme: %4.1f jours ?",log(2.)*4.5)   at 20,200 center rotate by 22 font "Carlito,14"
+set label 5 sprintf("Isère: %4.1f jours ?",log(2.)*4.5)   at 20,100 center rotate by 22 font "Carlito,14"
 set xrange [4:25]
-plot 'covid19.dat' u 1:2 w p ps 2 t "Cas détectés", \
-     '' u 1:3 ax x1y1 w p ps 2 pt 6 t "Décès", \
+plot 'covid19.dat' u 1:"Itot" w p ps 2 t "Cas détectés", \
+     '' u 1:"Dtot" ax x1y1 w p ps 2 pt 6 t "Décès", \
      1412*exp((x-9)/tau) w l lc 1 not, \
      42*exp((x-10)/tau) w l lc 2 ax x1y1 not, \
-     'covid19.dat' u 1:4 w p ps 1.2 t "Auv. R-H", \
-     '' u 1:5 w p ps 1.2 t "Isère", \
-     '' u 1:6 w p ps 1.2 t "Drôme", \
-     '' u 1:"Grand_Est" w p ps 1.2 t "Grand Est", \
+     'covid19.dat' \
+        u 1:"I_ARH" w p pt 7 ps 1.2 t "Cas Auv. R-H", \
+     '' u 1:"D_ARH" w p pt 7 ps 1.2 t "Décès ARH", \
+     '' u 1:"Isère" w p pt 8 ps 1.2, \
+     '' u 1:"Drôme" w p pt 8 ps 1.2, \
+     '' u 1:"Grand_Est" w p pt 5 ps 1.2 t "Grand Est", \
      13*exp((x-11)/tau) w l lw 1 lc 6 not, \
      489*exp((x-10)/5.) w l dt 2 lw 1 lc 8 not, \
-     249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not
+     249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not, \
+     20*exp((x-10)/tau) w l dt 2 lw 1 lc 8 not
 
 exit 0
 
