@@ -30,6 +30,7 @@ set label 6 sprintf("Décès ARH: %4.1f jours ?",log(2.)*tau)  at 20,35	c rot by
 set label 7 sprintf("France (cas): %4.1f jours",log(2.)*tau)   at 15,9000 c rot by aa tc lt 1
 set label 8 sprintf("France (décès): %4.1f jours",log(2.)*tau) at 15,200  c rot by aa tc lt 2
 set label 9 sprintf("Europe: %4.1f jours",log(2.)*5.8) at 15,6e4 c rot by 15 tc lt 7
+set label 10 sprintf("Rhône: %4.1f jours",log(2.)*6) at 20,300 c rot by 15 font "Carlito,12"
 
 set xrange [4:25]
 plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
@@ -38,12 +39,14 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      '' i 0 u 1:"D_ARH" w p pt 6 ps 1.3 t "Décès ARH", \
      '' i 0 u 1:"Isère" w p pt 7 ps 1.3, \
      '' i 0 u 1:"Drôme" w p pt 7 ps 1.4, \
+     '' i 0 u 1:"Rhone" w p pt 7 ps 1.4, \
      '' i 0 u 1:"Grand_Est" w p pt 5 ps 1.2 t "Grand Est", \
      1412*exp((x-9)/tau) w l lw 5 lc 1 not, \
      42*exp((x-10)/tau)  w l lw 5 lc 2 ax x1y1 not, \
      489*exp((x-10)/5.)  w l dt 2 lw 1 lc 8 not, \
      13*exp((x-11)/tau)  w l dt 2 lw 1 lc 8 not, \
      249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not, \
+     44*exp((x-8)/6)  w l dt 2 lw 1 lc 8 not, \
      20*exp((x-10)/tau)  w l dt 2 lw 1 lc 8 not, \
      12*exp((x-14)/tau)  w l dt 2 lw 1 lc 8 not, \
      'covid19.dat' \
