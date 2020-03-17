@@ -20,6 +20,9 @@ Données issues de Santé Publique France :
 
 ### IT, FR, ESP
 ![alt text](./covid19-pays.png?raw=true "Comparaison entre IT/FR/ESP")
+- Liens:
+-- [Espagne](https://covid19.isciii.es)
+-- [Italie](http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255)
 
 #### Mortalité
 
