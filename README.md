@@ -9,6 +9,13 @@
 
 * la mortalité en Europe est de 4%, probablement parce que dominée par
   l'Italie où la population est plus vieille
+### Comparaison des pyramides des âges
+- Voici les pyramides des âges de la France, comparée à celles de l'Espagne et de l'Italie, en 2020. J'ai mis des catégories d'âges un peu guidées par covid19, à savoir <60 ans, 60-80 ans, et >80 ans.
+- construites à partir de ce [site de l'INSEE (ultra bien fait)](https://www.insee.fr/fr/statistiques/2418102)
+
+![alt text](./covid19_pyramides_FR_ESP_2020.png?raw=true "France - Espagne 2020")
+![alt text](./covid19_pyramides_FR_IT_2020.png?raw=true "France - Italie 2020")
+
 
 ### Comparaison régions
 
