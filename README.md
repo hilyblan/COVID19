@@ -1,7 +1,7 @@
 # COVID19 // Courbe quotidienne
 
 ## La courbe au 17 mars 2020
-![alt text](./covid19.svg?raw=true "Évolution temporelle")
+![alt text](./covid19.png?raw=true "Évolution temporelle")
 
 ### Mortalité
 
@@ -15,8 +15,8 @@
 * la courbe de l'*Ile-de-France* (pas montrée ici) suggère qu'elle
   entre dans la phase de propagation libre. Étant donné la population
   importante de l'IdF, on s'attend à ce que la progression Française
-  soit malheureusement stable. /L'IdL compte depuis le 16 mars plus de
-  cas que le Grand Est/.
+  soit malheureusement stable. _L'IdL compte depuis le 16 mars plus de
+  cas que le Grand Est_.
 
 ## Données issues de Santé Public France :
 
