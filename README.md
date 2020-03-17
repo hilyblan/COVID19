@@ -1,7 +1,22 @@
 # COVID19 // Courbe quotidienne
 
-## La courbe au 16 mars 2020
-![alt text](./covid19.png?raw=true "Évolution en France")
+## La courbe au 17 mars 2020
+![alt text](./covid19.svg?raw=true "Évolution temporelle")
+
+### Mortalité
+
+* la mortalité en France est de 2% en moyenne donc sur la pyramide des âges;
+
+* la mortalité en Europe est de 4%, probablement parce que dominée par
+  l'Italie où la population est plus vieille
+
+### Comparaison régions
+
+* la courbe de l'*Ile-de-France* (pas montrée ici) suggère qu'elle
+  entre dans la phase de propagation libre. Étant donné la population
+  importante de l'IdF, on s'attend à ce que la progression Française
+  soit malheureusement stable. /L'IdL compte depuis le 16 mars plus de
+  cas que le Grand Est/.
 
 ## Données issues de Santé Public France :
 
