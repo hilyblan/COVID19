@@ -30,7 +30,7 @@
 
 ### Régions françaises
 
-* 18-mars: IdF emboîte le pas... Un début de tassement du nombre de cas en France ? Le nombre de décès suit sa courbe. Auvergne-Rhône-Alpes suit sa courbe. Grand-Est aussi. Bref, terrible à dire, mais on continue sur le même rythme. Restons à la maison...
+* 18-mars: IdF a bel et bien emboîté le pas... Un début de tassement du nombre de cas en France ? Du reste, le nombre de décès suit la courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également leurs courbes Bref, terrible à dire, mais on continue sur le même rythme. Restons à la maison...
 
 * 17-mars: la courbe de l'*Ile-de-France* (pas montrée ici) suggère qu'elle
   entre dans la phase de propagation libre. Étant donné la population
