@@ -4,6 +4,13 @@
 
 ![](./covid19.png)
 
+* 18-mars: IdF a bel et bien emboîté le pas... Un début de tassement du nombre de cas en France ? Du reste, le nombre de décès suit la courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également leurs courbes Bref, terrible à dire, mais on continue sur le même rythme. **Restons à la maison...**
+
+* 17-mars: la courbe de l'*Ile-de-France* (pas montrée ici) suggère qu'elle
+  entre dans la phase de propagation libre. Étant donné la population
+  importante de l'IdF, on s'attend à ce que la progression Française
+  soit malheureusement stable. _L'IdL compte depuis le 16 mars plus de
+  cas que le Grand Est_.
 
 <!---
 
@@ -13,30 +20,8 @@
 
 --->
 
-## Liens utiles
-
-* Données issues de Santé Publique France :
-  * [chiffres-cles.json](https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.json)
-  * [chiffres-cles.csv](https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv)
-* Auvergne Rhône Alpes
-  * [France3 Région](https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/carte-coronavirus-covid-19-se-trouvent-858-cas-confirmes-auvergne-rhone-alpes-1796941.html)
-* [Espagne](https://covid19.isciii.es)
-* [Italie](http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255)
-
-### IT, FR, ESP
+## Comparaison Italia, España, France
 ![alt text](./covid19-pays.png?raw=true "Comparaison entre IT/FR/ESP")
-
-## Commentaires & Comparaisons
-
-### Régions françaises
-
-* 18-mars: IdF a bel et bien emboîté le pas... Un début de tassement du nombre de cas en France ? Du reste, le nombre de décès suit la courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également leurs courbes Bref, terrible à dire, mais on continue sur le même rythme. Restons à la maison...
-
-* 17-mars: la courbe de l'*Ile-de-France* (pas montrée ici) suggère qu'elle
-  entre dans la phase de propagation libre. Étant donné la population
-  importante de l'IdF, on s'attend à ce que la progression Française
-  soit malheureusement stable. _L'IdL compte depuis le 16 mars plus de
-  cas que le Grand Est_.
 
 ### Mortalité
 
@@ -54,6 +39,17 @@
 ![alt text](./covid19_pyramides_FR_ESP_2020.png?raw=true "France - Espagne 2020")
 ![alt text](./covid19_pyramides_FR_IT_2020.png?raw=true "France - Italie 2020")
 ![alt text](./covid19_pyramides_IT_ESP_2020.png?raw=true "Italie - Espagne 2020")
+
+## Liens utiles
+
+* Données issues de Santé Publique France :
+  * [chiffres-cles.json](https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.json)
+  * [chiffres-cles.csv](https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv)
+* Auvergne Rhône Alpes
+  * [France3 Région](https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/carte-coronavirus-covid-19-se-trouvent-858-cas-confirmes-auvergne-rhone-alpes-1796941.html)
+* [Espagne](https://covid19.isciii.es)
+* [Italie](http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255)
+
 
 
 <!---[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
