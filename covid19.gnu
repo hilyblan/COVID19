@@ -21,17 +21,20 @@ aa=19.0
 
 #set label font "Carlito,12" at 1,1
 
-set label 1 sprintf("Tps de doublement\nFrance\n%4.1f jours",log(2.)*tau) at 20,10  c boxed font "Carlito,20"
-set label 2 sprintf("ARH: %4.1f jours",log(2.)*6.5)          at 22,1300	c rot by 13 font "Carlito,12"
-set label 3 sprintf("Grand Est: %4.1f jours",log(2.)*5)      at 22,4500	c rot by 16 font "Carlito,12"
-set label 4 sprintf("Drôme: %4.1f jours ?",log(2.)*tau)      at 20,160	c rot by aa font "Carlito,12"
-set label 5 sprintf("Isère: %4.1f jours ?",log(2.)*tau)      at 20,80	c rot by aa font "Carlito,12"
-set label 6 sprintf("Décès ARH: %4.1f jours ?",log(2.)*tau)  at 20,35	c rot by aa font "Carlito,12"
-set label 7 sprintf("France (cas): %4.1f jours",log(2.)*tau)   at 15,9000 c rot by aa tc lt 1
-set label 8 sprintf("France (décès): %4.1f jours",log(2.)*tau) at 15,200  c rot by aa tc lt 2
-set label 9 sprintf("Europe: %4.1f jours",log(2.)*5.8) at 15,6e4 c rot by 15 tc lt 7
-set label 10 sprintf("Rhône: %4.1f jours",log(2.)*6) at 20,300 c rot by 15 font "Carlito,12"
+flabel(s,x)=sprintf("%s: %4.1f jours",s,log(2.)*x)
 
+set label 1 sprintf("Tps de doublement\nFrance\n%4.1f jours",log(2.)*tau) at 20,10  c boxed font "Carlito,24"
+set label  2 flabel("ARH",6.5)            at 22,1300	c rot by 13 font "Carlito,12"
+set label  3 flabel("Grand Est",5)        at 22,4500	c rot by 16 font "Carlito,12"
+set label  4 flabel("Drôme (*)",tau)      at 22,240	c rot by aa font "Carlito,12"
+set label  5 flabel("Isère (*)",tau)      at 22,130	c rot by aa font "Carlito,12"
+set label  6 flabel("Décès ARH",6.5)      at 22,45	c rot by 13 font "Carlito,12"
+set label  7 flabel("France (cas)",tau)   at 15,9000 c rot by aa tc lt 1
+set label  8 flabel("France (décès)",tau) at 15,200  c rot by aa tc lt 2
+set label  9 flabel("Europe",5.8)         at 15,6e4 c rot by 15 tc lt 7
+set label 10 flabel("Rhône",6)            at 20,300 c rot by 15 font "Carlito,12"
+unset label 11
+!set label 11 "IdF" at 18,3000	c rot by 16 font "Carlito,12"
 set xrange [4:25]
 plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      '' i 0 u 1:"Dtot" ax x1y1 w p ps 2.5 pt 6 t "Décès", \
@@ -41,6 +44,7 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      '' i 0 u 1:"Drôme" w p pt 7 ps 1.4, \
      '' i 0 u 1:"Rhone" w p pt 7 ps 1.4, \
      '' i 0 u 1:"Grand_Est" w p pt 5 ps 1.2 t "Grand Est", \
+     '' i 0 u 1:"IdF" w p pt 5 ps 1.2, \
      1412*exp((x-9)/tau) w l lw 5 lc 1 not, \
      42*exp((x-10)/tau)  w l lw 5 lc 2 ax x1y1 not, \
      489*exp((x-10)/5.)  w l dt 2 lw 1 lc 8 not, \
@@ -48,7 +52,7 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not, \
      44*exp((x-8)/6)  w l dt 2 lw 1 lc 8 not, \
      20*exp((x-10)/tau)  w l dt 2 lw 1 lc 8 not, \
-     12*exp((x-14)/tau)  w l dt 2 lw 1 lc 8 not, \
+     (x>=15?18*exp((x-15)/6.5):1/0)  w l dt 2 lw 1 lc 8 not, \
      'covid19.dat' \
         i 1 u "Date":"I_Europe" w p pt 2 ps 1.3 t "Europe", \
      18086*exp((x-10)/5.8)  w l dt 2 lw 1 lc 8 not
@@ -68,12 +72,12 @@ plot [4:16] \
      '' u 1:6 w p ps 1.2 t "Drôme / cas"
 exit 0
 
-set label 1 sprintf("Tps de doublement\nFrance\n%4.1f jours",log(2.)*tau) at 20,10 center font "Carlito,20" boxed front
-set label 2 sprintf("ARH: %4.1f jours",log(2.)*6.5)          at 22,1300	 center rot by 15 font "Carlito,12"
-set label 3 sprintf("Grand Est: %4.1f jours",log(2.)*5)      at 22,4500	 center rot by 20 font "Carlito,12"
-set label 4 sprintf("Drôme: %4.1f jours ?",log(2.)*tau)      at 20,160	 center rot by aa font "Carlito,12"
-set label 5 sprintf("Isère: %4.1f jours ?",log(2.)*tau)      at 20,80	 center rot by aa font "Carlito,12"
-set label 6 sprintf("Décès ARH: %4.1f jours ?",log(2.)*tau)  at 20,35	 center rot by aa font "Carlito,12"
-set label 7 sprintf("Cas France: %4.1f jours",log(2.)*tau)   at 20,2.2e4 center rot by aa font "Carlito,16"
-set label 8 sprintf("Décès France: %4.1f jours",log(2.)*tau) at 20,500	 center rot by aa font "Carlito,16"
-set label 8 sprintf("Décès France: %4.1f jours",log(2.)*tau) at 20,500	 center rot by aa font "Carlito,16"
+set label 1 flabel("Tps de doublement\nFrance\n%4.1f jours",log(2.)*tau) at 20,10 center font "Carlito,20" boxed front
+set label 2 flabel("ARH: %4.1f jours",log(2.)*6.5)          at 22,1300	 center rot by 15 font "Carlito,12"
+set label 3 flabel("Grand Est: %4.1f jours",log(2.)*5)      at 22,4500	 center rot by 20 font "Carlito,12"
+set label 4 flabel("Drôme: %4.1f jours ?",log(2.)*tau)      at 20,160	 center rot by aa font "Carlito,12"
+set label 5 flabel("Isère: %4.1f jours ?",log(2.)*tau)      at 20,80	 center rot by aa font "Carlito,12"
+set label 6 flabel("Décès ARH: %4.1f jours ?",log(2.)*tau)  at 20,35	 center rot by aa font "Carlito,12"
+set label 7 flabel("Cas France: %4.1f jours",log(2.)*tau)   at 20,2.2e4 center rot by aa font "Carlito,16"
+set label 8 flabel("Décès France: %4.1f jours",log(2.)*tau) at 20,500	 center rot by aa font "Carlito,16"
+set label 8 flabel("Décès France: %4.1f jours",log(2.)*tau) at 20,500	 center rot by aa font "Carlito,16"
