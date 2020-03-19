@@ -1,8 +1,31 @@
-# COVID19 // Courbe quotidienne
+# COVID19 // Courbe quotidienne et bulletin météo
 
-## France : la courbe au 18 mars 2020
+## J3 : la courbe au 19 mars 2020
 
 ![](./covid19.png)
+
+**Temps de doublements (en jours)**
+| Région | Cas | Décès| Guéris (à venir)|
+|--------|---|---|---|
+| Europe | 4 | ||
+| France | 4 | 1.7 ??? ||
+| IdF    | 3.1 ?| ||
+| Grand Est | 4.2 ?|| |
+| Auvergne Rhône Alpes | 4.5 | 2.1 ???||
+| Drôme | 8.3 | ||
+| Isère | 3.5 | ||
+| Rhône | 4.2 | ||
+| Italie | 4.5 | 3.8 ||
+| Espagne | 3.5 | 2.4 ||
+
+## Bulletin météo
+
+* 19 mars: ça bouge on dirait
+  * les cas en France semblent doubler plus lentement : tous les 4 jours, au lieu de 3.1 jusqu'à hier. La France a donc ralentit et augmente comme l'Europe.
+  * les **décès semblent eux s'accélérer** : doublement tous les 1.7 jours ; plus rapide encore que l'Espagne. La mortalité (enfin, ce que j'appelle comme ça, càd le rapport cas/décès) rattrappe celui de l'Espagne.
+  * Auverge-Rhône-Alpes continue sur le même ryhtme d'un doublement des cas tous les 4.5 jours
+  * En revanche, les décès en ARH semblent augmenter très vite
+  * la Drôme confirme son net ralentissement : doublement tous les 8.3 jours
 
 * 18-mars: IdF a bel et bien emboîté le pas... Un début de tassement du nombre de cas en France ? Du reste, le nombre de décès suit la courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également leurs courbes Bref, terrible à dire, mais on continue sur le même rythme. **Restons à la maison...**
 
