@@ -14,11 +14,14 @@ aa=19.0
 i_isere=5.0
 i_drome=12.
 d_arh = 3.0
+idf = tau
+grandest = 6.0
+
 flabel(s,x)=sprintf("%s %4.1f jours",s,log(2.)*x)
 
 set label 1 sprintf("Tps de doublement\nFrance\n%4.1f jours",4.0) at 20,10  c boxed font "Carlito,24"
 set label  2 flabel("ARH",6.5)            at 18,700	c rot by 13 font "Carlito,12"
-set label  3 flabel("Grand Est",5)        at 22,4500	c rot by 16 font "Carlito,12"
+set label  3 flabel("Grand Est",grandest) at 22,3800	c rot by 14 font "Carlito,12"
 set label  4 flabel("Drôme",tau)      at 13,50	front c rot by aa font "Carlito,12"
 set label 12 flabel("",i_drome)            at 18,100	c rot by 8 font "Carlito,12"
 set label  5 flabel("Isère",i_isere)      at 22,130	c rot by aa font "Carlito,12"
@@ -30,6 +33,7 @@ set label  8 flabel("France",tau) at 15,200  c rot by aa tc lt 2
 set label 13 flabel("???",2.5) at 22,1000  c rot by 33 tc lt 2
 set label  9 flabel("Europe",5.8)         at 15,6e4 c rot by 15 tc lt 0
 set label 10 flabel("Rhône",6)            at 22,350 c rot by 15 font "Carlito,12"
+set label 15 flabel("IdF",idf)            at 22,8000 c rot by aa font "Carlito,12"
 
 #set label 11 "IdF" at 18,3000	c rot by 16 font "Carlito,12"
 
@@ -47,7 +51,6 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      (x<16&&x>7?1412*exp((x-9)/tau):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x<17?175*exp((x-17)/tau):1/0)  w l lw 5 lc 2 not, \
      (x>17?175*exp((x-17)/2.5):1/0)  w l lw 5 lc 2 not, \
-     489*exp((x-10)/5.)  w l dt 2 lw 1 lc 8 not, \
      13*exp((x-11)/i_isere)  w l dt 2 lw 1 lc 8 not, \
      249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not, \
      (x>16?69*exp((x-16)/i_drome):1/0)     w l dt 2 lw 1 lc 8 not, \
@@ -55,6 +58,8 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      (x>15&&x<18?18*exp((x-15)/6.5):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>18?27*exp((x-18)/d_arh):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>9?49*exp((x-9)/6):1/0)  w l dt 2 lw 1 lc 8 not, \
+     (x>16?1762*exp((x-16)/idf):1/0)  w l dt 2 lw 1 lc 8 not, \
+     (x>15?1378*exp((x-15)/grandest):1/0)  w l dt 2 lw 1 lc 8 not, \
      'covid19.dat' \
         i 1 u "Date":"I_Europe" w p lc 0 pt 2 ps 1.3 t "Europe", \
      18086*exp((x-10)/5.8)  w l dt 2 lw 1 lc 8 not
