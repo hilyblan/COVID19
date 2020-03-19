@@ -1,4 +1,6 @@
 #+title: COVID19 // Courbe quotidienne et bulletin météo
+#+author: P. Hily-Blant
+#+email: pierre.hily-blant@univ-grenoble-alpes.fr
 #+options: toc:2
 
 * J3 : la courbe au 19 mars 2020
@@ -20,7 +22,7 @@
 | Italie               |   4.5 | 3.8     |                  |
 | Espagne              |   3.5 | 2.4     |                  |
 
-* Bulletin météo
+** Bulletin météo
 
 - 19 mars: ça bouge on dirait
   - Les cas en France semblent doubler plus lentement : tous les 4
@@ -73,12 +75,17 @@
      ans.
    - Construites à partir de ce [[https://www.insee.fr/fr/statistiques/2418102][site de l'INSEE (ultra bien fait !)]]
 
+#+attr_html: :width 400 :alt Comparaison FR ESP
+[[./covid19_pyramides_FR_ESP_2020.png]]
 
-   [[./covid19_pyramides_FR_ESP_2020.png][France - Espagne 2020]]
+#+attr_html: :width 400 :alt Comparaison FR ESP
+   [[./covid19_pyramides_FR_ESP_2020.png]]
 
-   [[./covid19_pyramides_FR_IT_2020.png][France - Italie 2020]]
+#+attr_html: :width 400 :alt Comparaison FR IT
+   [[./covid19_pyramides_FR_IT_2020.png]]
 
-   [[./covid19_pyramides_IT_ESP_2020.png][Italie - Espagne 2020]]
+#+attr_html: :width 400 :alt Comparaison IT ESP
+[[./covid19_pyramides_IT_ESP_2020.png]]
 
 * Liens utiles
   - Données issues de Santé Publique France :
