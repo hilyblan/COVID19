@@ -38,9 +38,12 @@ plot 'covid19.dat' \
      '' i 2 u 1:"D(Esp)" w p ps 1.5 pt 6 lc 3, \
      '' i 2 u 1:"Italia" w p ps 1.5 pt 5 lc 5, \
      '' i 2 u 1:"D(It)"  w p ps 1.5 pt 6 lc 5, \
+     '' i 2 u 1:"Germany" w p ps 1.5 pt 4 lc 7, \
+     '' i 2 u 1:"D(De)"  w p ps 1.5 pt 6 lc 7, \
      '' i 0 u 1:($3/$2*100.)  w p ps 1.5 pt 8 t "Mortalité (*) Fr.", \
      '' i 2 u 1:($3/$2*100.)  w p ps 1.5 pt 8 t "Mortalité (*) Esp.", \
      '' i 2 u 1:($5/$4*100.)  w p ps 1.5 pt 8 t "Mortalité (*) It.", \
+     '' i 2 u 1:($9/$8*100.)  w p ps 1.5 pt 8 t "Mortalité (*) De.", \
      (x>13?5232*exp((x-13)/5.):1/0) w l dt 2 lw 1 lc 0 not, \
      (x>13?133*exp((x-13)/3.5):1/0) w l dt 2 lw 1 lc 0 not, \
      (x>11?12462*exp((x-11)/6.5):1/0) w l dt 2 lw 1 lc 0 not, \

@@ -1,9 +1,9 @@
-#+title: COVID19 // Courbe quotidienne et bulletin météo
+#+title: COVID19 // Bulletin quotidien
 #+author: P. Hily-Blant
 #+email: pierre.hily-blant@univ-grenoble-alpes.fr
 #+options: toc:2
 
-* J3 : la courbe au 19 mars 2020
+* J4 : la courbe au 20 mars 2020
 [[./covid19.png]]
 
 *Temps de doublements (en jours)*
@@ -12,7 +12,7 @@
 | Région               |   Cas | Décès   | Guéris (à venir) |
 |----------------------+-------+---------+------------------|
 | Europe               |     4 |         |                  |
-| France               |     4 | 1.7 ??? |                  |
+| France               |     4 | 2.1 ??? |                  |
 | IdF                  | 3.1 ? |         |                  |
 | Grand Est            | 4.2 ? |         |                  |
 | Auvergne Rhône Alpes |   4.5 | 2.1 ??? |                  |
@@ -21,9 +21,44 @@
 | Rhône                |   4.2 |         |                  |
 | Italie               |   4.5 | 3.8     |                  |
 | Espagne              |   3.5 | 2.4     |                  |
+| Allemagne            |  <4 ? | ???     |                  |
 
 ** Bulletin météo
-
+- 20 mars:
+  - J'ai l'impression de perdre la notion des jours. Aujourd'hui, nous
+    sommes Vendredi. Nous sommes à J+7 de la première annonce
+    (confinement mou), à J+5 de la seconde, et à J4 de confinement
+    dur. On s'oriente vers un confinement plus dur encore.
+  - On continue au même rythme en Europe. Le ralentissement en France
+    est encore confirmé. L'Allemagne, qui progressait au même rythme
+    que la France pourrait être en train d'accélérer. En Italie: aucun
+    ralentissement.
+  - Concernant les décès, l'Espagne continue avec un temps de
+    doublement de 2.4 jours. Je n'ai pas essayé de regarder la vitesse
+    des décès en Allemagne : ça bouge trop de jour en jour. En France,
+    on est sur rythme proche de l'Espagne. L'Italie continue avec un
+    temps de doublement de 3.8 jours.
+  - En France, les progressions sont stables dans les régions que j'ai
+    regardées (IdF, ARH, Grand Est). Notamment, *on ne voit aucun
+    effet du confinement*, en particulier en ARH. Le ralentissement à
+    l'échelle de la France est peut-être lié au ralentissement en
+    Grand Est, région la plus touchée jusqu'à ce que IdF prenne la
+    tête. Si IdF continue à son rythme, il est probable que le temps
+    de doublement à l'échelle Française diminue. En gros, pour
+    l'instant, on ne voit pas d'effet du confinement (dur ou mou).
+  - *Précision importante* : tous ces temps sont des ajustements à
+    l'œil des courbes; incertitude typiquement de \pm0.1 jour.
+  - *Communiqué de l'Agence Régionale de Santé Auvergne-Rhône-Alpes*:
+    "Nous souhaitons vous informer que l’ARS et la préfecture de la
+    région Auvergne-Rhône-Alpes ne diffuseront pas de communiqué «
+    Point de situation » ce soir sur les cas confirmés et décès de
+    Covid 19 dans la région. Santé publique France a reçu un certain
+    nombre de résultats très tardivement, notamment concernant le
+    Rhône. Les résultats ne sont donc pas représentatifs ce soir. Par
+    ailleurs, des investigations sur des résultats amènent des
+    modifications de répartition entre certains départements. Des
+    ajustements sont donc nécessaires et seront réalisés demain dans
+    la journée."
 - 19 mars: ça bouge on dirait
   - Les cas en France semblent doubler plus lentement : tous les 4
     jours, au lieu de 3.1 jusqu'à hier. La France a donc ralentit et
