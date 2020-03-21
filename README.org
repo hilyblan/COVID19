@@ -4,8 +4,13 @@
 #+options: toc:2
 
 * J5 : c'est le printemps !
-** La courbe au 21 mars 2020
+** Les courbes au 21 mars 2020
    [[./covid19.png]]
+
+
+   *Comparaison Italia, España, France, Allemagne*
+   [[./covid19-pays.png]]
+   # ?raw=true "Comparaison entre IT/FR/ESP"
 
 ** Ressentir l'exponentielle
 
@@ -170,25 +175,22 @@
      malheureusement stable. *L'IdL compte depuis le 16 mars plus de
      cas que le Grand Est*.
 
-* Comparaison Italia, España, France, Allemagne
-  [[./covid19-pays.png]]
-# ?raw=true "Comparaison entre IT/FR/ESP"
 
-** Mortalité
+* Mortalité
 
-   *Attention* ce que j'ai mis ici est simplement le rapport
+   *Attention*: ce que j'ai mis ici est simplement le rapport
    Décès/Cas. C'est donc une mortalité moyennée sur l'ensemble de la
    population. Et par ailleurs, c'est probablement une sur-estimation,
    car le nombre de cas est probablement plus grand que celui que l'on
    connaît.
 
-- la mortalité en France est de 2%, en moyenne donc sur la pyramide des âges;
+   - la mortalité en France est de 2%, en moyenne donc sur la pyramide des âges;
 
-- la mortalité en Europe est de 4%, peut-être parce que dominée par
-  l'Italie où la population est plus vieille. Regardez les pyramides
-  des âges comparées ci-dessous.
+   - la mortalité en Europe est de 4%, peut-être parce que dominée par
+     l'Italie où la population est plus vieille. Regardez les pyramides
+     des âges comparées ci-dessous.
 
-** Comparaison des pyramides des âges
+** Pyramides des âges
    - Voici les pyramides des âges de la France, comparée à celles de
      l'Espagne et de l'Italie, en 2020. J'ai mis des catégories d'âges
      un peu guidées par covid19, à savoir <60 ans, 60-80 ans, et >80
