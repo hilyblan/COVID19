@@ -47,131 +47,130 @@
 
    Voilà... Qu'attend-on? Au mieux, fin mars, un tassement dû au
    confinement, et \sim1 semaine après, peut-être un début
-   d'inversion. Mais lorsqu'on voit l'Italie, qui a en gros \sim10
-   jours d'avance, son état aujourd'hui est celui qu'on peut imaginer
-   en France au 31 mars: autant dire, pas de changement. L'Italie
-   n'est pas la France. Certes.
+   d'inversion. D'ailleurs, lorsqu'on regarde la courbe de l'Italie,
+   qui a en gros \sim10 jours d'avance, son état aujourd'hui est celui
+   qu'on peut imaginer en France au 31 mars: et on dirait qu'elle a
+   atteint son pic. Mais l''Italie n'est pas la France, donc prudence.
 
-  *Temps de doublements (en jours)*
+   *Temps de doublements (en jours)*
 
-  #+caption: Temps de doublements T (en jours)
-  | Région               | Cas | Décès   | Guéris (à venir) |
-  |----------------------+-----+---------+------------------|
-  | Europe               |   4 |         |                  |
-  | France               |   4 | 2.1 ??? |                  |
-  | IdF                  | 3.5 |         |                  |
-  | Grand Est            | 4.2 |         |                  |
-  | Auvergne Rhône Alpes | 4.5 | 2.1 ??? |                  |
-  | Drôme                | 8.5 |         |                  |
-  | Isère                | 3.5 |         |                  |
-  | Rhône                | 4.2 |         |                  |
-  | Italie               | 4.5 | 4.1     |                  |
-  | Espagne              | 3.5 | 2.4     |                  |
-  | Allemagne            | 3.5 | 2.1 ??? |                  |
+   #+caption: Temps de doublements T (en jours)
+   | Région               | Cas | Décès   | Guéris (à venir) |
+   |----------------------+-----+---------+------------------|
+   | Europe               |   4 |         |                  |
+   | France               |   4 | 2.1 ??? |                  |
+   | IdF                  | 3.5 |         |                  |
+   | Grand Est            | 4.2 |         |                  |
+   | Auvergne Rhône Alpes | 4.5 | 2.1 ??? |                  |
+   | Drôme                | 8.5 |         |                  |
+   | Isère                | 3.5 |         |                  |
+   | Rhône                | 4.2 |         |                  |
+   | Italie               | 4.5 | 4.1     |                  |
+   | Espagne              | 3.5 | 2.4     |                  |
+   | Allemagne            | 3.5 | 2.1 ??? |                  |
 
-  *Précision importante* : tous ces temps sont des ajustements à
-  l'œil des courbes; l'iincertitude est typiquement \pm0.15 jour.
+   *Précision importante* : tous ces temps sont des ajustements à
+   l'œil des courbes; l'iincertitude est typiquement \pm0.15 jour.
 
 ** Bulletin météo
-- 21 mars:
-  - Europe : rythme remarquablement constant. Il faut probablement
-    prendre cette valeur de T=4j comme référence car elle moyenne sur
-    la diversité des politiques, et approches de l'épidémie.
-  - Pays
-    - _Allemagne_: il y a bien \approx 10 fois moins de décès qu'en
-      France. Mais la pente est raide: T=2.1 jours. Tandis que le
-      nombre de cas est comparable à celui de la France ou de
-      l'Espagne. L'explication la plus simple est qu'ils ont un
-      meilleur dépistage que l'Espagne, la France, ou l'Italie, et que
-      le nombre de cas est plus proche de la réalité que chez
-      nous. Corrolaire: le nombre de cas est *probablement 10 fois
-      plus grand en France que les chiffres annoncés*.
-      - /Note/: j'avais pris hier les données sur Wikipédia; leur
-	référence était bonne, mais je ne comprends pas ce qu'ils ont
-	fait. J'ai donc repris les données à partir du site du Berliner
-	Morgen post (voir dans [[Liens Utiles]] ci-dessous), données
-	elles-mêmes issues de Johns Hopkins University. Comme quoi, *les
-	données fiables ne sont pas toujours faciles à trouver*.
-    - _France_: le "ralentissement" du temps de doublement des *cas
-      infectés*, à 4 jours, au niveau national, se confirme. Ce
-      ralentissement est probablement trompeur car, comme je disais
-      hier, l'IdF, qui est la région la plus peuplée, augmente plus
-      vite. Il se peut que le dépistage se concentre sur les cas les
-      plus graves, et donc que la sous-estimation du nombre de cas
-      soit plus grande qu'auparavant. Le *nombre de décès* en France
-      augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
-      T(décès) est troublant.
-    - _Italie_: aucun changement. Il va y avoir 1000 morts en un jour
-      demain en Italie. Terrible.
-    - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
-      en Espagne.
-  - Au niveau régional:
-    - IdF, le temps de doublement a baissé légèrement par rapport à
-      celui que je donnais hier; T=3.5 jours.
-    - Grand Est: gros changement. On aurait pu s'attendre à 3750 cas
-      aujourd'hui, or on en compte 3089, soit *700 cas de moins que
-      prévu*. Trompe-l'œil, ou un réel tassement?
-    - Auvergne-Rhône Alpes est remarquablement stable : T=4.5j.
-      - Drôme : le net ralentissement semble se confirmer; T=8.5 jours
-      - Isère : pas de ralentissement, T=3.5 jours
-- 20 mars:
-  - J'ai l'impression de perdre la notion des jours. Aujourd'hui, nous
-    sommes Vendredi. Nous sommes à J+7 de la première annonce
-    (confinement mou), à J+5 de la seconde, et à J4 de confinement
-    dur. On s'oriente vers un confinement plus dur encore.
-  - On continue au même rythme en Europe. Le ralentissement en France
-    est encore confirmé. L'Allemagne, qui progressait au même rythme
-    que la France pourrait être en train d'accélérer. En Italie: aucun
-    ralentissement.
-  - Concernant les décès, l'Espagne continue avec un temps de
-    doublement de 2.4 jours. Je n'ai pas essayé de regarder la vitesse
-    des décès en Allemagne : ça bouge trop de jour en jour. En France,
-    on est sur rythme proche de l'Espagne. L'Italie continue avec un
-    temps de doublement T=3.8 jours.
-  - En France, les progressions sont stables dans les régions que j'ai
-    regardées (IdF, ARH, Grand Est). Notamment, *on ne voit aucun
-    effet du confinement*, en particulier en ARH. Le ralentissement à
-    l'échelle de la France est peut-être lié au ralentissement en
-    Grand Est, région la plus touchée jusqu'à ce que IdF prenne la
-    tête. Si IdF continue à son rythme, il est probable que le temps
-    de doublement à l'échelle Française diminue. En gros, pour
-    l'instant, on ne voit pas d'effet du confinement (dur ou mou).
-  - *Communiqué de l'Agence Régionale de Santé Auvergne-Rhône-Alpes*:
-    "Nous souhaitons vous informer que l’ARS et la préfecture de la
-    région Auvergne-Rhône-Alpes ne diffuseront pas de communiqué «
-    Point de situation » ce soir sur les cas confirmés et décès de
-    Covid 19 dans la région. Santé publique France a reçu un certain
-    nombre de résultats très tardivement, notamment concernant le
-    Rhône. Les résultats ne sont donc pas représentatifs ce soir. Par
-    ailleurs, des investigations sur des résultats amènent des
-    modifications de répartition entre certains départements. Des
-    ajustements sont donc nécessaires et seront réalisés demain dans
-    la journée."
-- 19 mars: ça bouge on dirait
-  - Les cas en France semblent doubler plus lentement : tous les 4
-    jours, au lieu de 3.1 jusqu'à hier. La France a donc ralentit et
-    augmente comme l'Europe.
-  - Les *décès semblent eux s'accélérer* : doublement tous les 1.7
-    jours ; plus rapide encore que l'Espagne. La mortalité (enfin, ce
-    que j'appelle comme ça, càd le rapport cas/décès) rattrappe celui
-    de l'Espagne.
-  - Auverge-Rhône-Alpes continue sur le même ryhtme d'un doublement
-    des cas tous les 4.5 jours
-  - En revanche, les décès en ARH semblent augmenter très vite
-  - La Drôme confirme son net ralentissement : doublement tous les 8.3
-    jours
-- 18-mars
-  - IdF a bel et bien emboîté le pas... Un début de tassement du
-    nombre de cas en France ? Du reste, le nombre de décès suit la
-    courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également
-    leurs courbes Bref, terrible à dire, mais on continue sur le même
-    rythme. *Restons à la maison...*
-- 17-mars
-  - la courbe de l'*Ile-de-France* suggère qu'elle entre dans la phase
-    de propagation libre. Étant donné la population importante de
-    l'IdF, on s'attend à ce que la progression Française soit
-    malheureusement stable. *L'IdL compte depuis le 16 mars plus de
-    cas que le Grand Est*.
+   - 21 mars:
+     - Europe : rythme remarquablement constant. Il faut probablement
+       prendre cette valeur de T=4j comme référence car elle moyenne sur
+       la diversité des politiques, et approches de l'épidémie.
+     - Pays
+       - _Allemagne_: il y a bien \approx 10 fois moins de décès qu'en
+	 France. Mais la pente est raide: T=2.1 jours. Tandis que le
+	 nombre de cas est comparable à celui de la France ou de
+	 l'Espagne. L'explication la plus simple est qu'ils ont un
+	 meilleur dépistage que l'Espagne, la France, ou l'Italie, et que
+	 le nombre de cas est plus proche de la réalité que chez
+	 nous. Corrolaire: le nombre de cas est *probablement 10 fois
+	 plus grand en France que les chiffres annoncés*.
+	 - /Note/: j'avais pris hier les données sur Wikipédia; leur
+	   référence était bonne, mais je ne comprends pas ce qu'ils ont
+	   fait. J'ai donc repris les données à partir du site du Berliner
+	   Morgen post (voir dans [[Liens Utiles]] ci-dessous), données
+	   elles-mêmes issues de Johns Hopkins University. Comme quoi, *les
+	   données fiables ne sont pas toujours faciles à trouver*.
+       - _France_: le "ralentissement" du temps de doublement des *cas
+	 infectés*, à 4 jours, au niveau national, se confirme. Ce
+	 ralentissement est probablement trompeur car, comme je disais
+	 hier, l'IdF, qui est la région la plus peuplée, augmente plus
+	 vite. Il se peut que le dépistage se concentre sur les cas les
+	 plus graves, et donc que la sous-estimation du nombre de cas
+	 soit plus grande qu'auparavant. Le *nombre de décès* en France
+	 augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
+	 T(décès) est troublant.
+       - _Italie_: peut-être le pic ? (voir commentaires plus haut)
+       - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
+	 en Espagne.
+     - Au niveau régional:
+       - IdF, le temps de doublement a baissé légèrement par rapport à
+	 celui que je donnais hier; T=3.5 jours.
+       - Grand Est: gros changement. On aurait pu s'attendre à 3750 cas
+	 aujourd'hui, or on en compte 3089, soit *700 cas de moins que
+	 prévu*. Trompe-l'œil, ou un réel tassement?
+       - Auvergne-Rhône Alpes est remarquablement stable : T=4.5j.
+	 - Drôme : le net ralentissement semble se confirmer; T=8.5 jours
+	 - Isère : pas de ralentissement, T=3.5 jours
+   - 20 mars:
+     - J'ai l'impression de perdre la notion des jours. Aujourd'hui, nous
+       sommes Vendredi. Nous sommes à J+7 de la première annonce
+       (confinement mou), à J+5 de la seconde, et à J4 de confinement
+       dur. On s'oriente vers un confinement plus dur encore.
+     - On continue au même rythme en Europe. Le ralentissement en France
+       est encore confirmé. L'Allemagne, qui progressait au même rythme
+       que la France pourrait être en train d'accélérer. En Italie: aucun
+       ralentissement.
+     - Concernant les décès, l'Espagne continue avec un temps de
+       doublement de 2.4 jours. Je n'ai pas essayé de regarder la vitesse
+       des décès en Allemagne : ça bouge trop de jour en jour. En France,
+       on est sur rythme proche de l'Espagne. L'Italie continue avec un
+       temps de doublement T=3.8 jours.
+     - En France, les progressions sont stables dans les régions que j'ai
+       regardées (IdF, ARH, Grand Est). Notamment, *on ne voit aucun
+       effet du confinement*, en particulier en ARH. Le ralentissement à
+       l'échelle de la France est peut-être lié au ralentissement en
+       Grand Est, région la plus touchée jusqu'à ce que IdF prenne la
+       tête. Si IdF continue à son rythme, il est probable que le temps
+       de doublement à l'échelle Française diminue. En gros, pour
+       l'instant, on ne voit pas d'effet du confinement (dur ou mou).
+     - *Communiqué de l'Agence Régionale de Santé Auvergne-Rhône-Alpes*:
+       "Nous souhaitons vous informer que l’ARS et la préfecture de la
+       région Auvergne-Rhône-Alpes ne diffuseront pas de communiqué «
+       Point de situation » ce soir sur les cas confirmés et décès de
+       Covid 19 dans la région. Santé publique France a reçu un certain
+       nombre de résultats très tardivement, notamment concernant le
+       Rhône. Les résultats ne sont donc pas représentatifs ce soir. Par
+       ailleurs, des investigations sur des résultats amènent des
+       modifications de répartition entre certains départements. Des
+       ajustements sont donc nécessaires et seront réalisés demain dans
+       la journée."
+   - 19 mars: ça bouge on dirait
+     - Les cas en France semblent doubler plus lentement : tous les 4
+       jours, au lieu de 3.1 jusqu'à hier. La France a donc ralentit et
+       augmente comme l'Europe.
+     - Les *décès semblent eux s'accélérer* : doublement tous les 1.7
+       jours ; plus rapide encore que l'Espagne. La mortalité (enfin, ce
+       que j'appelle comme ça, càd le rapport cas/décès) rattrappe celui
+       de l'Espagne.
+     - Auverge-Rhône-Alpes continue sur le même ryhtme d'un doublement
+       des cas tous les 4.5 jours
+     - En revanche, les décès en ARH semblent augmenter très vite
+     - La Drôme confirme son net ralentissement : doublement tous les 8.3
+       jours
+   - 18-mars
+     - IdF a bel et bien emboîté le pas... Un début de tassement du
+       nombre de cas en France ? Du reste, le nombre de décès suit la
+       courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également
+       leurs courbes Bref, terrible à dire, mais on continue sur le même
+       rythme. *Restons à la maison...*
+   - 17-mars
+     - la courbe de l'*Ile-de-France* suggère qu'elle entre dans la phase
+       de propagation libre. Étant donné la population importante de
+       l'IdF, on s'attend à ce que la progression Française soit
+       malheureusement stable. *L'IdL compte depuis le 16 mars plus de
+       cas que le Grand Est*.
 
 * Comparaison Italia, España, France
   [[./covid19-pays.png]]
