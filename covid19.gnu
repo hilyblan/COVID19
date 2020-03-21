@@ -12,11 +12,11 @@ tau=4.5
 aa=19.0
 
 i_isere=5.0
-i_drome=12.
-d_arh = 3.0
-idf = tau
+i_drome=12.2
+d_arh = 4.0
+i_idf = 5.
 grandest = 6.0
-d_fr=3. #2.5
+d_fr=3.5 #2.5
 
 flabel(s,x)=sprintf("%s %4.1f jours",s,log(2.)*x)
 
@@ -34,7 +34,7 @@ set label  8 flabel("France",tau) at 15,200  c rot by aa tc lt 2
 set label 13 flabel("???",d_fr) at 22,700  c rot by 29 tc lt 2
 set label  9 flabel("Europe",5.8)         at 15,6e4 c rot by 15 tc lt 0
 set label 10 flabel("Rhône",6)            at 22,350 c rot by 15 font "Carlito,12"
-set label 15 flabel("IdF",idf)            at 22,8000 c rot by aa font "Carlito,12"
+set label 15 flabel("IdF",i_idf)            at 22,8000 c rot by aa font "Carlito,12"
 
 #set label 11 "IdF" at 18,3000	c rot by 16 font "Carlito,12"
 
@@ -50,8 +50,8 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      '' i 0 u 1:"IdF" w p pt 5 ps 1.2, \
      (x>=16?6633*exp((x-16)/5.8):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>7?1412*exp((x-9)/tau):1/0)  w l dt 2 lw 1 lc 8 not, \
-     (x<17?175*exp((x-17)/tau):1/0)  w l lw 5 lc 2 not, \
-     (x>17?175*exp((x-17)/d_fr):1/0)  w l lw 5 lc 2 not, \
+     (x<16&&x>10?148*exp((x-16)/tau):1/0)  w l lw 5 lc 2 not, \
+     (x>16?148*exp((x-16)/d_fr):1/0)  w l lw 5 lc 2 not, \
      13*exp((x-11)/i_isere)  w l dt 2 lw 1 lc 8 not, \
      249*exp((x-10)/6.5) w l dt 2 lw 1 lc 8 not, \
      (x>16?69*exp((x-16)/i_drome):1/0)     w l dt 2 lw 1 lc 8 not, \
@@ -59,7 +59,7 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      (x>15&&x<18?18*exp((x-15)/6.5):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>18?27*exp((x-18)/d_arh):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>9?49*exp((x-9)/6):1/0)  w l dt 2 lw 1 lc 8 not, \
-     (x>16?1762*exp((x-16)/idf):1/0)  w l dt 2 lw 1 lc 8 not, \
+     (x>16?1762*exp((x-16)/i_idf):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x>15?1378*exp((x-15)/grandest):1/0)  w l dt 2 lw 1 lc 8 not, \
      'covid19.dat' \
         i 1 u "Date":"I_Europe" w p lc 0 pt 2 ps 1.3 t "Europe", \

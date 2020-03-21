@@ -3,27 +3,117 @@
 #+email: pierre.hily-blant@univ-grenoble-alpes.fr
 #+options: toc:2
 
-* J4 : la courbe au 20 mars 2020
-[[./covid19.png]]
+* J4
+** La courbe au 20 mars 2020
+   [[./covid19.png]]
 
-*Temps de doublements (en jours)*
+** Ressentir l'exponentielle
 
-#+caption: Temps de doublements (en jours)
-| Région               |   Cas | Décès   | Guéris (à venir) |
-|----------------------+-------+---------+------------------|
-| Europe               |     4 |         |                  |
-| France               |     4 | 2.1 ??? |                  |
-| IdF                  | 3.1 ? |         |                  |
-| Grand Est            | 4.2 ? |         |                  |
-| Auvergne Rhône Alpes |   4.5 | 2.1 ??? |                  |
-| Drôme                |   8.3 |         |                  |
-| Isère                |   3.5 |         |                  |
-| Rhône                |   4.2 |         |                  |
-| Italie               |   4.5 | 3.8     |                  |
-| Espagne              |   3.5 | 2.4     |                  |
-| Allemagne            |  <4 ? | ???     |                  |
+   Tous ces nombres qui s'entassent : difficile de ressentir. Voilà
+   ce que prévoient les courbes, pour le nombre des décès. Il faut
+   regarder les nombres entre parenthèses, qui donnent la variation
+   d'un jour au suivant.  Évidemment, j'espère me tromper.
+
+   # | Pays    | Hier | Aujourd'hui |     Demain | Après-demain |
+   # |---------+------+-------------+------------+--------------|
+   # | Italie  | 4032 |  4825(+793) | 5720(+900) | 6775(+1055)  |
+   # | Espagne | 1002 |  1326(+324) | 1740(+414) |   2315(+575) |
+   # | France  |  450 |   562(+112) |  747(+185) |    972(+225) |
+
+   # do for [i=22:31:1] {label=sprintf("%5.0d%10.0f", i,1050*(exp((i-12)/d_it2)-exp((i-1-12)/d_it2)));print label}
+   #+caption: nombre de décès dans chaque journée.
+   | Date | Italie | Espagne | France |
+   |------+--------+---------+--------|
+   |   22 |   +892 |    +432 |   +204 |
+   |   23 |  +1056 |    +576 |   +272 |
+   |   24 |  +1251 |    +766 |   +362 |
+   |   25 |  +1482 |   +1019 |   +481 |
+   |   26 |  +1756 |   +1356 |   +640 |
+   |   27 |  +2081 |   +1805 |   +852 |
+   |   28 |  +2465 |   +2401 |  +1134 |
+   |   29 |  +2920 |   +3196 |  +1509 |
+   |   30 |  +3460 |   +4253 |  +2008 |
+   |   31 |  +4099 |   +5659 |  +2672 |
+
+   L'Italie s'attend certainement à avoir 1000 dans la seule journée
+   du 23 mars. C'est-à-dire autant que pendant les trois premières
+   semaines de l'épidémie.
+
+   En Espagne, si son rythme élevé se confirme, ils s'attendent
+   probablement à plus de 5000 morts pendant le w-e prochain.
+
+   En France, on pourrait bien avoir \approx2500 morts le même w-e. Et
+   autant dans la seule journée du 31 mars.
+
+   Voilà... Qu'attend-on? Au mieux, fin mars, un tassement dû au
+   confinement, et \sim1 semaine après, peut-être un début
+   d'inversion. Mais lorsqu'on voit l'Italie, qui a en gros \sim10
+   jours d'avance, son état aujourd'hui est celui qu'on peut imaginer
+   en France au 31 mars: autant dire, pas de changement. L'Italie
+   n'est pas la France. Certes.
+
+  *Temps de doublements (en jours)*
+
+  #+caption: Temps de doublements T (en jours)
+  | Région               | Cas | Décès   | Guéris (à venir) |
+  |----------------------+-----+---------+------------------|
+  | Europe               |   4 |         |                  |
+  | France               |   4 | 2.1 ??? |                  |
+  | IdF                  | 3.5 |         |                  |
+  | Grand Est            | 4.2 |         |                  |
+  | Auvergne Rhône Alpes | 4.5 | 2.1 ??? |                  |
+  | Drôme                | 8.5 |         |                  |
+  | Isère                | 3.5 |         |                  |
+  | Rhône                | 4.2 |         |                  |
+  | Italie               | 4.5 | 4.1     |                  |
+  | Espagne              | 3.5 | 2.4     |                  |
+  | Allemagne            | 3.5 | 2.1 ??? |                  |
+
+  *Précision importante* : tous ces temps sont des ajustements à
+  l'œil des courbes; l'iincertitude est typiquement \pm0.15 jour.
 
 ** Bulletin météo
+- 21 mars:
+  - Europe : rythme remarquablement constant. Il faut probablement
+    prendre cette valeur de T=4j comme référence car elle moyenne sur
+    la diversité des politiques, et approches de l'épidémie.
+  - Pays
+    - _Allemagne_: il y a bien \approx 10 fois moins de décès qu'en
+      France. Mais la pente est raide: T=2.1 jours. Tandis que le
+      nombre de cas est comparable à celui de la France ou de
+      l'Espagne. L'explication la plus simple est qu'ils ont un
+      meilleur dépistage que l'Espagne, la France, ou l'Italie, et que
+      le nombre de cas est plus proche de la réalité que chez
+      nous. Corrolaire: le nombre de cas est *probablement 10 fois
+      plus grand en France que les chiffres annoncés*.
+      - /Note/: j'avais pris hier les données sur Wikipédia; leur
+	référence était bonne, mais je ne comprends pas ce qu'ils ont
+	fait. J'ai donc repris les données à partir du site du Berliner
+	Morgen post (voir dans [[Liens Utiles]] ci-dessous), données
+	elles-mêmes issues de Johns Hopkins University. Comme quoi, *les
+	données fiables ne sont pas toujours faciles à trouver*.
+    - _France_: le "ralentissement" du temps de doublement des *cas
+      infectés*, à 4 jours, au niveau national, se confirme. Ce
+      ralentissement est probablement trompeur car, comme je disais
+      hier, l'IdF, qui est la région la plus peuplée, augmente plus
+      vite. Il se peut que le dépistage se concentre sur les cas les
+      plus graves, et donc que la sous-estimation du nombre de cas
+      soit plus grande qu'auparavant. Le *nombre de décès* en France
+      augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
+      T(décès) est troublant.
+    - _Italie_: aucun changement. Il va y avoir 1000 morts en un jour
+      demain en Italie. Terrible.
+    - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
+      en Espagne.
+  - Au niveau régional:
+    - IdF, le temps de doublement a baissé légèrement par rapport à
+      celui que je donnais hier; T=3.5 jours.
+    - Grand Est: gros changement. On aurait pu s'attendre à 3750 cas
+      aujourd'hui, or on en compte 3089, soit *700 cas de moins que
+      prévu*. Trompe-l'œil, ou un réel tassement?
+    - Auvergne-Rhône Alpes est remarquablement stable : T=4.5j.
+      - Drôme : le net ralentissement semble se confirmer; T=8.5 jours
+      - Isère : pas de ralentissement, T=3.5 jours
 - 20 mars:
   - J'ai l'impression de perdre la notion des jours. Aujourd'hui, nous
     sommes Vendredi. Nous sommes à J+7 de la première annonce
@@ -37,7 +127,7 @@
     doublement de 2.4 jours. Je n'ai pas essayé de regarder la vitesse
     des décès en Allemagne : ça bouge trop de jour en jour. En France,
     on est sur rythme proche de l'Espagne. L'Italie continue avec un
-    temps de doublement de 3.8 jours.
+    temps de doublement T=3.8 jours.
   - En France, les progressions sont stables dans les régions que j'ai
     regardées (IdF, ARH, Grand Est). Notamment, *on ne voit aucun
     effet du confinement*, en particulier en ARH. Le ralentissement à
@@ -46,8 +136,6 @@
     tête. Si IdF continue à son rythme, il est probable que le temps
     de doublement à l'échelle Française diminue. En gros, pour
     l'instant, on ne voit pas d'effet du confinement (dur ou mou).
-  - *Précision importante* : tous ces temps sont des ajustements à
-    l'œil des courbes; incertitude typiquement de \pm0.1 jour.
   - *Communiqué de l'Agence Régionale de Santé Auvergne-Rhône-Alpes*:
     "Nous souhaitons vous informer que l’ARS et la préfecture de la
     région Auvergne-Rhône-Alpes ne diffuseront pas de communiqué «
@@ -128,9 +216,10 @@
     - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.json][chiffres-cles.json]]
     - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv][chiffres-cles.csv]]
   - Auvergne Rhône Alpes
-    - [[https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/carte-coronavirus-covid-19-se-trouvent-858-cas-confirmes-auvergne-rhone-alpes-1796941.html][France3 Région]]
+    - [[https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/][France3 Région]]
   - [[https://covid19.isciii.es][Espagne]]
   - [[http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255][Italie]]
+  - [[https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/?fbclid=IwAR04HlqzakGaNssQzbz4d8o8R3gz0C910U8tvfYlBT6P0lVJJvHfk9uS2rc][Allemagne]]
 
 # <!---[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 # [./covid19.png
