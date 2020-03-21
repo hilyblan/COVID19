@@ -3,8 +3,8 @@
 #+email: pierre.hily-blant@univ-grenoble-alpes.fr
 #+options: toc:2
 
-* J4
-** La courbe au 20 mars 2020
+* J5 : c'est le printemps !
+** La courbe au 21 mars 2020
    [[./covid19.png]]
 
 ** Ressentir l'exponentielle
