@@ -9,10 +9,10 @@
 
 ** Ressentir l'exponentielle
 
-   Tous ces nombres qui s'entassent : difficile de ressentir. Voilà
-   ce que prévoient les courbes, pour le nombre des décès. Il faut
-   regarder les nombres entre parenthèses, qui donnent la variation
-   d'un jour au suivant.  Évidemment, j'espère me tromper.
+   Tous ces nombres qui s'entassent : difficile de ressentir. Voilà ce
+   que prévoient les courbes, pour le nombre des décès. La tableau
+   ci-dessous vous donne une estimation du nombre de décès dans une
+   journée.
 
    # | Pays    | Hier | Aujourd'hui |     Demain | Après-demain |
    # |---------+------+-------------+------------+--------------|
@@ -73,7 +73,7 @@
    l'œil des courbes; l'iincertitude est typiquement \pm0.15 jour.
 
 ** Bulletin météo
-*** 21 mars
+*** 21 mars : Italie, peut-être le pic?
    - Europe : rythme remarquablement constant. Il faut probablement
      prendre cette valeur de T=4j comme référence car elle moyenne sur
      la diversité des politiques, et approches de l'épidémie.
@@ -100,9 +100,8 @@
      soit plus grande qu'auparavant. Le *nombre de décès* en France
      augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
      T(décès) est troublant.
-   - _Italie_: peut-être le pic ? (voir commentaires plus haut)
-   - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
-     en Espagne.
+   - _Italie_: *peut-être le pic ?* (voir commentaires plus haut)
+   - _Espagne_: aucun changement. Ca avance vite, comme en France.
    - France, au niveau régional:
      - IdF, le temps de doublement a baissé légèrement par rapport à
        celui que je donnais hier; T=3.5 jours.
