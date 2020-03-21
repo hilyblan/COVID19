@@ -52,7 +52,7 @@
    qu'on peut imaginer en France au 31 mars: et on dirait qu'elle a
    atteint son pic. Mais l''Italie n'est pas la France, donc prudence.
 
-   *Temps de doublements (en jours)*
+** Temps de doublements (en jours)
 
    #+caption: Temps de doublements T (en jours)
    | Région               | Cas | Décès   | Guéris (à venir) |
