@@ -50,7 +50,7 @@
    d'inversion. D'ailleurs, lorsqu'on regarde la courbe de l'Italie,
    qui a en gros \sim10 jours d'avance, son état aujourd'hui est celui
    qu'on peut imaginer en France au 31 mars: et on dirait qu'elle a
-   atteint son pic. Mais l''Italie n'est pas la France, donc prudence.
+   atteint son pic. Mais l'Italie n'est pas la France: prudence donc.
 
 ** Temps de doublements (en jours)
 
@@ -170,7 +170,7 @@
      malheureusement stable. *L'IdL compte depuis le 16 mars plus de
      cas que le Grand Est*.
 
-* Comparaison Italia, España, France
+* Comparaison Italia, España, France, Allemagne
   [[./covid19-pays.png]]
 # ?raw=true "Comparaison entre IT/FR/ESP"
 
