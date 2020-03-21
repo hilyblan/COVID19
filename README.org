@@ -144,7 +144,7 @@
      modifications de répartition entre certains départements. Des
      ajustements sont donc nécessaires et seront réalisés demain dans
      la journée."
- - 19 mars: ça bouge on dirait
+*** 19 mars: ça bouge on dirait
    - Les cas en France semblent doubler plus lentement : tous les 4
      jours, au lieu de 3.1 jusqu'à hier. La France a donc ralentit et
      augmente comme l'Europe.
@@ -157,13 +157,13 @@
    - En revanche, les décès en ARH semblent augmenter très vite
    - La Drôme confirme son net ralentissement : doublement tous les 8.3
      jours
- - 18-mars
+*** 18-mars
    - IdF a bel et bien emboîté le pas... Un début de tassement du
      nombre de cas en France ? Du reste, le nombre de décès suit la
      courbe prévue. Auvergne-Rhône-Alpes, Grand Est, suivent également
      leurs courbes Bref, terrible à dire, mais on continue sur le même
      rythme. *Restons à la maison...*
- - 17-mars
+*** 17-mars
    - la courbe de l'*Ile-de-France* suggère qu'elle entre dans la phase
      de propagation libre. Étant donné la population importante de
      l'IdF, on s'attend à ce que la progression Française soit
