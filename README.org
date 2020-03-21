@@ -77,34 +77,33 @@
    - Europe : rythme remarquablement constant. Il faut probablement
      prendre cette valeur de T=4j comme référence car elle moyenne sur
      la diversité des politiques, et approches de l'épidémie.
-   - Pays
-     - _Allemagne_: il y a bien \approx 10 fois moins de décès qu'en
-       France. Mais la pente est raide: T=2.1 jours. Tandis que le
-       nombre de cas est comparable à celui de la France ou de
-       l'Espagne. L'explication la plus simple est qu'ils ont un
-       meilleur dépistage que l'Espagne, la France, ou l'Italie, et que
-       le nombre de cas est plus proche de la réalité que chez
-       nous. Corrolaire: le nombre de cas est *probablement 10 fois
-       plus grand en France que les chiffres annoncés*.
-       - /Note/: j'avais pris hier les données sur Wikipédia; leur
-	 référence était bonne, mais je ne comprends pas ce qu'ils ont
-	 fait. J'ai donc repris les données à partir du site du Berliner
-	 Morgen post (voir dans [[Liens Utiles]] ci-dessous), données
-	 elles-mêmes issues de Johns Hopkins University. Comme quoi, *les
-	 données fiables ne sont pas toujours faciles à trouver*.
-     - _France_: le "ralentissement" du temps de doublement des *cas
-       infectés*, à 4 jours, au niveau national, se confirme. Ce
-       ralentissement est probablement trompeur car, comme je disais
-       hier, l'IdF, qui est la région la plus peuplée, augmente plus
-       vite. Il se peut que le dépistage se concentre sur les cas les
-       plus graves, et donc que la sous-estimation du nombre de cas
-       soit plus grande qu'auparavant. Le *nombre de décès* en France
-       augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
-       T(décès) est troublant.
-     - _Italie_: peut-être le pic ? (voir commentaires plus haut)
-     - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
-       en Espagne.
-   - Au niveau régional:
+   - _Allemagne_: il y a bien \approx 10 fois moins de décès qu'en
+     France. Mais la pente est raide: T=2.1 jours. Tandis que le
+     nombre de cas est comparable à celui de la France ou de
+     l'Espagne. L'explication la plus simple est qu'ils ont un
+     meilleur dépistage que l'Espagne, la France, ou l'Italie, et que
+     le nombre de cas est plus proche de la réalité que chez
+     nous. Corrolaire: le nombre de cas est *probablement 10 fois
+     plus grand en France que les chiffres annoncés*.
+     - /Note/: j'avais pris hier les données sur Wikipédia; leur
+       référence était bonne, mais je ne comprends pas ce qu'ils ont
+       fait. J'ai donc repris les données à partir du site du Berliner
+       Morgen post (voir dans [[Liens Utiles]] ci-dessous), données
+       elles-mêmes issues de Johns Hopkins University. Comme quoi, *les
+       données fiables ne sont pas toujours faciles à trouver*.
+   - _France_: le "ralentissement" du temps de doublement des *cas
+     infectés*, à 4 jours, au niveau national, se confirme. Ce
+     ralentissement est probablement trompeur car, comme je disais
+     hier, l'IdF, qui est la région la plus peuplée, augmente plus
+     vite. Il se peut que le dépistage se concentre sur les cas les
+     plus graves, et donc que la sous-estimation du nombre de cas
+     soit plus grande qu'auparavant. Le *nombre de décès* en France
+     augmente à un rythme élevé, T=2.2 j. Ce décalage entre T(cas) et
+     T(décès) est troublant.
+   - _Italie_: peut-être le pic ? (voir commentaires plus haut)
+   - _Espagne_: aucun changement. Demain il y aura près de 2000 morts
+     en Espagne.
+   - France, au niveau régional:
      - IdF, le temps de doublement a baissé légèrement par rapport à
        celui que je donnais hier; T=3.5 jours.
      - Grand Est: gros changement. On aurait pu s'attendre à 3750 cas
