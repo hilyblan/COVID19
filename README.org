@@ -4,6 +4,7 @@
 #+options: toc:2
 
 - [[https://github.com/hilyblan/COVID19#les-courbes-au-21-mars-2020][Situation aujourd'hui]]
+- [[https://github.com/hilyblan/COVID19/blob/master/README.org#ressentir-lexponentielle][Ressentir l'exponentielle]]
 - [[https://github.com/hilyblan/COVID19/blob/master/README.org#temps-de-doublements-en-jours][Temps de doublement]]
 - [[https://github.com/hilyblan/COVID19#bulletin-m%C3%A9t%C3%A9o][Bulletin météo]]
 - [[https://github.com/hilyblan/COVID19#liens-utiles][Liens utiles]]
