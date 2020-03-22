@@ -16,9 +16,11 @@ i_drome=12.2
 d_arh = 4.0
 i_idf = 5.
 grandest = 6.0
+i_fr1=4.5
+i_fr2=6.0 #2.5
 d_fr=3.5 #2.5
 
-flabel(s,x)=sprintf("%s %4.1f jours",s,log(2.)*x)
+flabel(s,x)=sprintf("%s %4.1f j",s,log(2.)*x)
 
 set label  1 sprintf("Tps de doublement\nFrance\n%4.1f jours",4.0) at 20,10  c boxed font "Carlito,24"
 set label  2 flabel("ARH",6.5)            at 18,700	c rot by 13 font "Carlito,12"
@@ -28,10 +30,10 @@ set label 12 flabel("",i_drome)            at 18,100	c rot by 8 font "Carlito,12
 set label  5 flabel("Isère",i_isere)      at 22,130	c rot by aa font "Carlito,12"
 set label  6 flabel("Décès ARH",6.5)  at 17,20 c rot by 10 font "Carlito,12"
 set label 14 flabel("",d_arh)      at 21,60	c rot by 25 font "Carlito,12"
-set label  7 flabel("France",tau)   at 13,5500 front c rot by aa tc lt 1
-set label 11 flabel("",5.8)   at 22,19000 front c rot by 16 tc lt 1
+set label  7 flabel("France",i_fr1)   at 13,5500 front c rot by aa tc lt 1
+set label 11 flabel("",i_fr2)   at 23,19000 front c rot by 16 tc lt 1
 set label  8 flabel("France",tau) at 15,200  c rot by aa tc lt 2
-set label 13 flabel("???",d_fr) at 22,700  c rot by 29 tc lt 2
+set label 13 flabel("???",d_fr) at 23,800  c rot by 25 tc lt 2
 set label  9 flabel("Europe",5.8)         at 15,6e4 c rot by 15 tc lt 0
 set label 10 flabel("Rhône",6)            at 22,350 c rot by 15 font "Carlito,12"
 set label 15 flabel("IdF",i_idf)            at 22,8000 c rot by aa font "Carlito,12"
@@ -48,8 +50,8 @@ plot 'covid19.dat' i 0 u 1:"Itot" w p ps 2.5 t "Cas détectés", \
      '' i 0 u 1:"Rhône" w p pt 7 ps 1.4, \
      '' i 0 u 1:"Grand_Est" w p pt 5 ps 1.2 t "Grand Est", \
      '' i 0 u 1:"IdF" w p pt 5 ps 1.2, \
-     (x>=16?6633*exp((x-16)/5.8):1/0)  w l dt 2 lw 1 lc 8 not, \
-     (x>7?1412*exp((x-9)/tau):1/0)  w l dt 2 lw 1 lc 8 not, \
+     (x>=16?6633*exp((x-16)/i_fr2):1/0)  w l dt 2 lw 1 lc 8 not, \
+     (x>7&&x<16?1412*exp((x-9)/i_fr1):1/0)  w l dt 2 lw 1 lc 8 not, \
      (x<16&&x>10?148*exp((x-16)/tau):1/0)  w l lw 5 lc 2 not, \
      (x>16?148*exp((x-16)/d_fr):1/0)  w l lw 5 lc 2 not, \
      13*exp((x-11)/i_isere)  w l dt 2 lw 1 lc 8 not, \

@@ -3,6 +3,7 @@
 #+email: pierre.hily-blant@univ-grenoble-alpes.fr
 #+options: toc:2
 
+
 * J5 : c'est le printemps !
 ** Les courbes au 21 mars 2020
    [[./covid19.png]]
@@ -17,7 +18,9 @@
    Tous ces nombres qui s'entassent : difficile de ressentir. Voilà ce
    que prévoient les courbes, pour le nombre des décès. La tableau
    ci-dessous vous donne une estimation du nombre de décès dans une
-   journée.
+   journée et en plus, pour la France, le nombre de cas confirmés
+   attendus. C'est assez incertain car je n'ai pas d'information sur
+   le dépistage.
 
    # | Pays    | Hier | Aujourd'hui |     Demain | Après-demain |
    # |---------+------+-------------+------------+--------------|
@@ -27,18 +30,19 @@
 
    # do for [i=22:31:1] {label=sprintf("%5.0d%10.0f", i,1050*(exp((i-12)/d_it2)-exp((i-1-12)/d_it2)));print label}
    #+caption: nombre de décès dans chaque journée.
-   | Date | Italie | Espagne | France |
-   |------+--------+---------+--------|
-   |   22 |   +892 |    +432 |   +204 |
-   |   23 |  +1056 |    +576 |   +272 |
-   |   24 |  +1251 |    +766 |   +362 |
-   |   25 |  +1482 |   +1019 |   +481 |
-   |   26 |  +1756 |   +1356 |   +640 |
-   |   27 |  +2081 |   +1805 |   +852 |
-   |   28 |  +2465 |   +2401 |  +1134 |
-   |   29 |  +2920 |   +3196 |  +1509 |
-   |   30 |  +3460 |   +4253 |  +2008 |
-   |   31 |  +4099 |   +5659 |  +2672 |
+   | Date | Italie | Espagne | France | Cas France |
+   |------+--------+---------+--------+------------|
+   |   22 |   +892 |    +432 |   +204 |      +2768 |
+   |   23 |  +1056 |    +576 |   +272 |      +3270 |
+   |   24 |  +1251 |    +766 |   +362 |      +3863 |
+   |   25 |  +1482 |   +1019 |   +481 |      +4564 |
+   |   26 |  +1756 |   +1356 |   +640 |      +5391 |
+   |   27 |  +2081 |   +1805 |   +852 |      +6369 |
+   |   28 |  +2465 |   +2401 |  +1134 |      +7524 |
+   |   29 |  +2920 |   +3196 |  +1509 |      +8889 |
+   |   30 |  +3460 |   +4253 |  +2008 |     +10501 |
+   |   31 |  +4099 |   +5659 |  +2672 |     +12405 |
+   |      |        |         |        |            |
 
    L'Italie s'attend certainement à avoir 1000 dans la seule journée
    du 23 mars. C'est-à-dire autant que pendant les trois premières
@@ -174,7 +178,6 @@
      l'IdF, on s'attend à ce que la progression Française soit
      malheureusement stable. *L'IdL compte depuis le 16 mars plus de
      cas que le Grand Est*.
-
 
 * Mortalité
 
