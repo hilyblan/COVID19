@@ -39,7 +39,7 @@ set label 7 flabel("Italia",d_it1) at 7,150 c rot by 24 font "Carlito,12"
 set label 5 flabel("Allemagne",d_de) at 22,80 c rot by 26 font "Carlito,12"
 set label 6 flabel("France",d_fr) at 22,600 c rot by 26 font "Carlito,12"
 
-set xrange [4:25]
+set xrange [4:31]
 set yrange [*:1.3e5]
 plot 'covid19.dat' \
         i 0 u 1:"Itot"   w p ps 1.5 pt 5 lc 1 t "France", \

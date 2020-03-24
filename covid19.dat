@@ -1,5 +1,6 @@
 #France
 date	Itot	Dtot	I_ARH	D_ARH	IdF	Grand_Est	Isère	Drôme	Rhône
+24	22302	1100	1857	?	6798	4922		?	?	?
 23	19856	860	1738	85	6211	4256		155	112	491
 22	16689	674	1431	72	5283	3395		117	99	381
 21	14459	562	1266	57	4695	3089		103	93	337
@@ -24,6 +25,7 @@ date	Itot	Dtot	I_ARH	D_ARH	IdF	Grand_Est	Isère	Drôme	Rhône
 
 
 Date	I_Monde D_Monde I_Europe D_Europe
+24	378041	16365	182470	 10049
 23	338307	14602	160233	 8622
 21	271364	11252	127896	 5999
 20	242488	9885	102659	 4885
@@ -46,6 +48,7 @@ Date	I_Monde D_Monde I_Europe D_Europe
 
 
 Date	Espana	D(Esp)	Italia  D(It) R(Esp)	R(It) Germany D(De)  Allemagne  D(All.)
+24	39673	2696	69176	6820   3794	8326  ?	      ?	     32991	159
 23	33089	2182	?	?      3355	?     ?	      ?	     	29437	126
 22	?	?	59138	5476  ?		7024  ?		?	29056	123
 21	24926	1326	42681	4825  2125	?     16662	68	22213	84
