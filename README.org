@@ -11,8 +11,8 @@
 - [[https://github.com/hilyblan/COVID19#liens-utiles][Liens utiles]]
 
 
-* J8 : c'est le printemps !
-** Les courbes au 24 mars 2020
+* J10 : deux semaines depuis le premier coup de semonce
+** Les courbes au 26 mars 2020
    [[./covid19.png]]
 
 
@@ -24,6 +24,17 @@
    pas été mises à jour; ça permet de voir que ça ralentit.
 
 ** Bulletin météo
+*** 26 mars : changement de régime se confirme
+    - Globalement, on voit un ralentissement du temps de doublement
+      dans toutes les courbes que je trace pour la France. Même
+      l'Europe semble voir la propagation ralentir.
+    - Cas confirmés : l'Italie, la France, l'Allemagne, et l'Espagne,
+      voient leur progression ralentir.
+    - Cela fait \sim2 semaines que le confinement a commencé en
+      France. Ce qui correspond à la limite supérieure présumée de la
+      durée d'incubation: le ralentissement que l'on observe est donc
+      un effet du confinement. En revanche, pour les décès, le
+      ralentissement est moins évident.
 *** 24 mars : changement de régime?
     - Le temps de doublement en France est passé à 4.5 jours: net
       ralentissement. Il y a une semaine, c'était 3.1 jours. Ce temps,
@@ -243,15 +254,20 @@
 [[./covid19_pyramides_IT_ESP_2020.png]]
 
 * Liens utiles
-  - Données issues de Santé Publique France :
-    - [[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde][Santé Publique France]]
-    - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.json][chiffres-cles.json]]
-    - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv][chiffres-cles.csv]]
-  - Auvergne Rhône Alpes
-    - [[https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/][France3 Région]]
-  - [[https://covid19.isciii.es][Espagne]]
-  - [[http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4310][Italie]] ([[http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255][lien]] jusqu'au 22 mars inclus)
-  - [[https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/?fbclid=IwAR04HlqzakGaNssQzbz4d8o8R3gz0C910U8tvfYlBT6P0lVJJvHfk9uS2rc][Allemagne]]
+  - France:
+    - Données issues de Santé Publique France :
+      - [[https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-et-infections-respiratoires/infection-a-coronavirus/articles/infection-au-nouveau-coronavirus-sars-cov-2-covid-19-france-et-monde][Santé Publique France]]
+      - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.json][chiffres-cles.json]]
+      - [[https://github.com/opencovid19-fr/data/raw/master/dist/chiffres-cles.csv][chiffres-cles.csv]]
+    - Auvergne Rhône Alpes
+      - [[https://france3-regions.francetvinfo.fr/auvergne-rhone-alpes/][France3 Région]]
+  - Europe
+    - [[https://covid19.isciii.es][Espagne]]
+    - [[http://www.salute.gov.it/portale/nuovocoronavirus/dettaglioNotizieNuovoCoronavirus.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4310][Italie]] ([[http://www.salute.gov.it/portale/news/p3_2_1_1_1.jsp?lingua=italiano&menu=notizie&p=dalministero&id=4255][lien]] jusqu'au 22 mars inclus)
+    - [[https://interaktiv.morgenpost.de/corona-virus-karte-infektionen-deutschland-weltweit/?fbclid=IwAR04HlqzakGaNssQzbz4d8o8R3gz0C910U8tvfYlBT6P0lVJJvHfk9uS2rc][Allemagne]]
+  - [[http://91-divoc.com/pages/covid-visualization/?fbclid=IwAR1saJwWsBheUePS9e3_3V2jClOGBmVBUWXytT1e_4JmujPxreuhS8xJjS8][Monde]] (à prendre avec des pincettes, mais très bien fait, un peu
+    technique. Regardez les USA...)
+
 
 # <!---[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
 # [./covid19.png
